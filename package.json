@@ -1,0 +1,34 @@
+{
+    "name": "sswebserviceclient",
+    "version": "0.1.0",
+    "description": "A promise-based SOAP client for Secret Server",
+    "engines": {
+        "node": ">=0.12.0"
+    },
+    "author": "Kevin Jones <kevin@vcsjones.com>",
+    "dependencies": {
+        "soap": "~0.8.0"
+    },
+    "main": "./index.js",
+    "directories": {
+        "lib": "./lib"
+    },
+    "keywords": ["Secret Server"],
+    "licenses": [
+        {
+        "type": "MIT License",
+        "url": "http://www.opensource.org/licenses/mit-license.php"
+        }
+    ],
+    "devDependencies": {
+        "mocha": "~1.17.0",
+        "jshint": "2.3.0",
+        "glob": "~3.2.8",
+        "should": "~3.3.0",
+        "timekeeper": "~0.0.4"
+    },
+    "scripts": {
+        "pretest": "jshint index.js lib test",
+        "test": "mocha test/*-test.js test/security/*.js"
+    }
+}
