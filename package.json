@@ -21,14 +21,9 @@
         }
     ],
     "devDependencies": {
-        "mocha": "~1.17.0",
-        "jshint": "2.3.0",
-        "glob": "~3.2.8",
-        "should": "~3.3.0",
-        "timekeeper": "~0.0.4"
+        "jsdoc": "latest"
     },
     "scripts": {
-        "pretest": "jshint index.js lib test",
-        "test": "mocha test/*-test.js test/security/*.js"
+        "docs": "jsdoc index.js ./lib -r -d ./docs"
     }
 }
