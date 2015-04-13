@@ -40,6 +40,11 @@ Using npm:
         });
     });
     
+##Completeness
+
+This module is still very much a proof of concept, and alpha. Many of Secret Server's SOAP methods are not
+implemented. They will be over time, and further abstractions on top of Secret Server's SOAP API will be added.
+    
 ##Documentation
 
 The npm module exports a single function, `createFactory`. This factory is used to obtain a client instance.
